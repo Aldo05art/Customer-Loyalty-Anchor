@@ -1,0 +1,73 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('kembar.webp'); /* Ganti dengan path gambar yang sesuai */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Pastikan gambar tidak diulang */
+    display: outside;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+}
+
+.wrapper h2 {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.wrapper input[type="text"], .wrapper input[type="email"], .wrapper input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.wrapper input[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wrapper input[type="submit"]:hover {
+    background-color: #444;
+}
+
+.wrapper a {
+    color: blue;
+    text-decoration: none;
+}
+
+.wrapper a:hover {
+    text-decoration: underline;
+}

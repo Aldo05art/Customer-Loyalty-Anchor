@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    flex: 1;
+    background-image: url('pemandangan\ sungai.jpg'); 
+    background-size: cover;
+    background-position: 95% center;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: center; /* Menempatkan link di tengah secara horizontal */
+    gap: 30px; /* Menambahkan jarak antar link */
+    width: 8%;
+    position: fixed;
+    top: 0; /* Menempatkan nav di atas */
+    background-color: white; /* Agar terlihat di atas gambar */
+    padding: 10px 0; /* Memberi ruang di atas dan bawah link */
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-bottom: 40px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons .sign-in {
+    background-color: black;
+    color: white;
+}
+
+.buttons .sign-up {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}

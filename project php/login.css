@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('kembar.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Pastikan gambar tidak diulang */
+    display: outside;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e90ff, #87cefa);
+}
+
+.tombol {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Wrapper for the Form */
+.wrapper {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.wrapper h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #0080ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper h2 i {
+    margin-left: 5px;
+    font-size: 28px;
+}
+
+.wrapper label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.wrapper input[type="email"],
+.wrapper input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.wrapper input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e90ff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.wrapper input[type="submit"]:hover {
+    background-color: #4682b4;
+}
+
+.wrapper p {
+    margin-top: 10px;
+}
+
+.wrapper a {
+    color: #007fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.wrapper a:hover {
+    color: #4682b4;
+}
+
+/* Toast Notification */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    min-width: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.toast.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
